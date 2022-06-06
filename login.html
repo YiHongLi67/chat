@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/layout.css">
+    <title>聊天室登录页</title>
+</head>
+
+<body>
+    <div class="login">
+        <div class="grad"></div>
+        <div class="btn loginBtn">login
+            <span>register</span>
+        </div>
+        <div class="btn registerBtn hidden">register
+            <span>login</span>
+        </div>
+        <form class="login-content" action="http://127.0.0.1:5000/login" method="GET">
+            <input type="text" name="username" placeholder="请输入用户名" id="nickname" value="" autocomplete="off">
+            <input type="password" name="pwd" placeholder="请输入密码" id="pwd" value="" autocomplete="off">
+            <input type="password" name="pwd" placeholder="请确认密码" class="confirm hidden" value="" autocomplete="off">
+            <input type="button" name="" class="loginSubmit" value="login">
+            <input type="button" name="" class="registerSunmit hidden" value="register">
+        </form>
+    </div>
+</body>
+<script src="./js/jQuery_v3.6.0_.js"></script>
+<script crossorigin="anonymous" src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.js"></script>
+<script src="./js/login.js"></script>
+<!-- <a href="./pages/chat.html"></a> -->
+
+</html>
+<!-- 伪元素 不占用DOM结构 不能被选中和修改 性能高 -->
